@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+/* General Rules */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: lavender;
+}
+
+h1,h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: hotpink;
+}
+
+h2 {
+    font-size: 1.25em;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    padding: 10px 0px;
+    width: 200px;
+}
+
+.section-1 h2 {
+    background-color: #B0E0E6;
+    color: #FFF5EE;
+}
+
+.section-2 h2 {
+    background-color: #87CEEB;
+    color: #FFF5EE;
+}
+
+.section-3 h2 {
+    background-color: #6495ED;
+    color: #FFF5EE;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    position: relative;
+    background-color: #FAFAD2;
+    margin: 10px 0px;
+}
+
+div,h2 {
+    border: 1px solid black;
+}
+
+p {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+    main > div {
+        width: 30%;
+        margin: 10px 15px;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-1,.section-2 {
+        width: 45%;
+        margin: 10px 1%;
+    }
+    .section-3 {
+        width: 93%;
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 767px) {
+    div {
+        display: block;
+        margin: 30px 30px;
+    }
+}
