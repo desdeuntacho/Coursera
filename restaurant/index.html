@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sum stuffy title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <nav id="header-nav" class="navbar navbar-default"> <!-- CONTENEDOR GENERAL NAVBAR -->
+        <div class="container"> <!-- CONTENEDOR UNIVERSAL -->
+
+          <div class="navbar-header"> <!-- LOGO+HEADING & MOBILE BUTTON -->
+
+            <a href="index.html" class="pull-left hidden-xs hidden-sm">
+              <div id="logo-img" alt="Brand Logo"></div>  <!-- LOGO AS DIV.BACKGROUND -->
+            </a>
+
+            <div class="navbar-brand">  <!-- TITULO Y SUBTITULO -->
+              <a href="index.html">
+                <h1>GETTING TIRED OF U</h1>
+              </a>
+              <p>
+                <img src="http://placecorgi.com/30/30" alt="Kosher stuff" style="border-radius: 50%;">
+                <span> FLIP PHONE GOLD TEAR</span>
+              </p>
+            </div>
+
+            <!-- BOTON HAMBURGUESA: data-toggle=collapse -> bootstrap js dropdown menu  -->
+            <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#collapsable-nav"
+            aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <!-- LINEAS DEL BOTON -->
+              <span class="icon-bar"></span> <!-- LINEAS DEL BOTON -->
+              <span class="icon-bar"></span> <!-- LINEAS DEL BOTON -->
+            </button>
+
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse"> <!-- TARGET DEL BOTON- se activa con la clase collapse -->
+            <ul id="navlist" class="nav navbar-nav navbar-right"> <!-- LISTA DE BOTONES TABLET/DESKTOP -->
+
+              <li>
+                <a href="menu-categories.html">
+                  <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards
+                </a>
+              </li>
+
+              <li id="phone" class="hidden-xs">
+                <a href="tel:4554-2198">
+                  <span>4554-2198</span></a>
+                  <div>* We deliver</div>
+              </li>
+
+          </ul> <!-- navlist -->
+          </div> <!-- .collapse .navbar-collapse -->
+
+        </div>
+      </nav>
+    </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a href="" class="btn">
+        <span class="glyphicon glyphicon-earphone"></span>
+        4554-2198
+      </a>
+    </div>
+
+    <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+    <div id="main-content" class="container">
+      <div class="jumbotron">
+        <img src="http://placecorgi.com/768/600/" alt="" class="img-responsive visible-xs">
+      </div>
+    </div>
+
+    <script src="/js/jquery-3.1.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
