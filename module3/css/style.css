@@ -56,14 +56,13 @@ body {
 
 /* MAIN SECTION */
 #page-title {
-  margin-top: 90px;
   color: #87CEEB;
+  text-shadow: 1px 1px 1px #777
 }
 
 #page-title h2 {
   font-style: bold;
-  font-size: 2em;
-  text-shadow: 1px 1px 1px #777;
+  font-size: 2.3em;
 }
 
 #section-1, #section-2, #section-3 {
